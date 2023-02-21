@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css">
     <title> Portfolio DIO</title>
 </head>
 <body>
     <div class="main">
-        <header class="header  ">
+        <header class="header">
              <img class="photo" src="imgs/astro.png" alt="">
              <h1 class="title">Olá, <br> eu sou Pablo Bidiaki</h1>
             <div class="infos">
@@ -19,6 +20,53 @@
                 <p class="email">email@gmail.com</p>
             </div>
         </header>
+        <section id="idiomasContainer" class="acordeon open">
+            <button id="btnIdiomas" class="trigger">
+                <span class="title">Idiomas</span>
+                <span id="seta" class="material-symbols-outlined">expand_more</span>
+            </button>
+            <div id="infosIdiomas" class="content none">
+                <ul>
+                    <li>Português(BR)</li>
+                    <li>Inglês</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projetosContainer" class="acordeon open">
+            <button id="btnProjetos" class="trigger">
+                <span class="title">Projetos</span>
+                <span id="setaProjetos" class="material-symbols-outlined">expand_more</span>
+            </button>
+            <div id="infosProjetos" class="content none">
+                <p class="titleProject">Buscador de CEP</p>
+                <a class="linkProject" href="https://github.com/pablobidiaki/BuscadorCepReact" target="_blank">https://github.com/pablobidiaki/BuscadorCepReact</a>
+                <p class="titleProject">Empregos com Filtro</p>
+                <a class="linkProject" href="https://github.com/pablobidiaki/EmpregosComFiltro" target="_blank">https://github.com/pablobidiaki/EmpregosComFiltro</a>
+            </div>
+        </section>
+
+        <section id="habilidadesContainer" class="acordeon open">
+            <button id="btnHabilidades" class="trigger">
+                <span class="title">Habilidades</span>
+                <span id="setaHabilidades" class="material-symbols-outlined">expand_more</span>
+            </button>
+            <div id="infosHabilidades" class="content none">
+                <div class="skills">
+                    <img src="imgs/html (1).png" alt="">
+                    <img src="imgs/css (1).png" alt="">
+                    <img src="imgs/javascript_logo.png" alt="">
+                    <img src="imgs/react.png" alt="">
+                </div>
+                <hr>
+                <div class="personalSkills">
+                    <p>Proativo</p>
+                    <p>Calmo</p>
+                    <p>Organizado</p>
+                    <p>Trabalho em equipe</p>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="script.js"></script>
 </body>
